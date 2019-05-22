@@ -22,7 +22,7 @@ download.ftp.scans.io <- function(dirdata = "data") {
   download.file(url = scansio.url, destfile = scansio.file.gz)
   R.utils::gunzip(scansio.file.gz)
   df.tcp21 <- read.csv(scansio.source, stringsAsFactors = FALSE)
-  file.remove(scansio.file.gz, scansio.source)
+  file.remove(scansio.source)
 
   saveRDS(object = df.tcp21, file = file.path(dir.data, "scansio.tcp21.rds"))
 

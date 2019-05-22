@@ -26,6 +26,7 @@ download.maxmind <- function(dirdata = "data") {
   maxmind.source <- file.path(dir.data, maxmind.source)
   df.maxmind <- read.csv(maxmind.source, stringsAsFactors = FALSE)
   file.remove(maxmind.source, maxmind.file)
+  unlink(file.path(dir.data, "GeoLite2-City-CSV_*"), recursive = T)
 
   # Maxmind elegante
   df.maxmind <- cbind(df.maxmind, iptools::range_boundaries(df.maxmind$network))
