@@ -14,3 +14,4 @@ Imports:
     iptools,
     dplyr,
     parallel
+RoxygenNote: 6.1.1
