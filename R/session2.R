@@ -1,8 +1,3 @@
-# Required packages
-# require(R.utils)
-# require(iptools)
-# require(dplyr)
-# require(parallel)
 
 # References used
 #  - https://opendata.rapid7.com/sonar.tcp/
@@ -10,9 +5,11 @@
 #  - http://rfunction.com/archives/2453
 #  - https://dev.maxmind.com/geoip/geoip2/geolite2/
 #  - https://cran.r-project.org/web/packages/iptools/vignettes/introduction_to_iptools.html
+#  - http://www.iwik.org/ipcountry/
 #  - https://rdrr.io/cran/rgeolocate/f/vignettes/Introduction_to_rgeolocate.Rmd
 #  - https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf
 #  - https://www.r-bloggers.com/how-to-go-parallel-in-r-basics-tips/
+#  - https://stackoverflow.com/questions/22739876/how-to-export-objects-to-parallel-clusters-within-a-function-in-r
 #  - https://www.r-graph-gallery.com/how-to-draw-connecting-routes-on-map-with-r-and-great-circles/
 
 # Default parameters
